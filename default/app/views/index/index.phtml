@@ -1,0 +1,11 @@
+	<div id='logo-kumbia'><?php echo Html::img('default/kumbia.png','KumbiaPHP logo') ?></div>
+    <div id='info'>
+		
+<?php foreach($ultimos as $item):?>
+	<section>
+		<header><h2><?php echo $item->titulo?></h2></header>
+		<p><?php echo $item->contenido?></p>
+		<footer><p>Creado por <strong><?php echo $item->getUsuario()->nombre?></strong> el <?php echo  $item->creado_at?></p></footer>
+	</section>
+<?php endforeach;?>
+    </div>

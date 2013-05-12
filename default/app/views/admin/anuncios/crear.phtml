@@ -1,0 +1,17 @@
+<?php Tag::css('scaffold')?>
+<div id="scaffold">
+<h1>Anuncios</h1>
+<?php View::content()?>
+<form action="/flisol/app/admin/anuncios/crear/" method="post" id="anuncio" class="scaffold">
+<input id="anuncio_id" name="anuncio[id]" class="id" value="" type="hidden">
+<label for="anuncio_titulo" class="required">Titulo *</label>
+<input id="anuncio_titulo" type="text" name="anuncio[titulo]" value="">
+<label for="anuncio_contenido" class="required">Contenido *</label>
+<input id="anuncio_contenido" type="text" name="anuncio[contenido]" value="">
+<input type="submit" value="Aceptar">
+</form>
+
+<div class="actions">
+	<a href="../">Listado</a>
+</div>
+</div>
